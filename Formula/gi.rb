@@ -5,21 +5,21 @@
 class Gi < Formula
   desc "Run one feature file as a functional test and a load test"
   homepage "https://github.com/gi-runner/gi"
-  version "1.2.1"
+  version "1.3.0"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/gi-runner/gi/releases/download/v1.2.1/gi_1.2.1_darwin_amd64.tar.gz"
-      sha256 "acf023e0797c7e7eb8a01d5cc46d7b69bfcda9f5a5441cda8b48f2cc83e8e0d6"
+      url "https://github.com/gi-runner/gi/releases/download/v1.3.0/gi_1.3.0_darwin_amd64.tar.gz"
+      sha256 "22e25ecca9ad375df248ba17de28a83cf533adb95dc56faf76a8239dba179363"
 
       define_method(:install) do
         bin.install "gi"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/gi-runner/gi/releases/download/v1.2.1/gi_1.2.1_darwin_arm64.tar.gz"
-      sha256 "8441e091e2d94df35abe7d53cab6864d79d77bbf80a1cbf52dff53a9e55ce0cc"
+      url "https://github.com/gi-runner/gi/releases/download/v1.3.0/gi_1.3.0_darwin_arm64.tar.gz"
+      sha256 "8e4641dd38d61e9932d7c1ccea84216779357325ed8004bd07b717927aa36ba0"
 
       define_method(:install) do
         bin.install "gi"
@@ -29,15 +29,15 @@ class Gi < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/gi-runner/gi/releases/download/v1.2.1/gi_1.2.1_linux_amd64.tar.gz"
-      sha256 "435c6c7e8e828714f01c5ca8be763a34543f5db0fbee3adb781f4677e178dba1"
+      url "https://github.com/gi-runner/gi/releases/download/v1.3.0/gi_1.3.0_linux_amd64.tar.gz"
+      sha256 "f20d70c46995240f72869829ab84af3151ab65c73d996b2a672be76cd65b680c"
       define_method(:install) do
         bin.install "gi"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/gi-runner/gi/releases/download/v1.2.1/gi_1.2.1_linux_arm64.tar.gz"
-      sha256 "61f4c49eabf2428b777877c4ade4cdf0c8b2b353265b6429f2b4f733ab9e1b38"
+      url "https://github.com/gi-runner/gi/releases/download/v1.3.0/gi_1.3.0_linux_arm64.tar.gz"
+      sha256 "fe24c415a1c3d38407f4da5738f20a26bc15fd0258afcc877845845c8d06fbce"
       define_method(:install) do
         bin.install "gi"
       end
